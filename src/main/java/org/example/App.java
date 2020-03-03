@@ -25,11 +25,8 @@ class MyList<E> extends AbstractList<E>
     }
     public boolean add(E e)
     {
-        //System.out.println(e+" "+actSize+" "+i);
         elementData[i]=e;
         i++;
-        // actSize++;
-
         if(i >= actSize)
         {
             increaseListSize();
